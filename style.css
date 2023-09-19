@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+
+.main-bg{
+    width: 100vw;
+    height: 100vh;
+  padding-top: 72px;
+    background: radial-gradient(293.21% 130.49% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    margin-bottom: 60px;
+}
+
+header img{
+    max-width: 244px;
+    width: 100%;
+    height: 48px;
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+   height: 360px;
+   padding: 48px 44px 40px;
+    border-radius: 16px;
+background: var(--gradient, linear-gradient(144deg, #5572BB 2.13%, #374B7C 102.97%));
+/* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+}
+
+.container h2{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color:  #3D538A;;
+    margin: 23px 0 33px;
+    }
+
+    /* .time-field {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: 0 15px;
+    } */
+.countdown{
+    margin-top: 30px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown div {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size:40px ;
+  font-weight: bold;
+  margin: 0 15px;
+ background-image:  url(./img/box.svg);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.countdown div::before{
+    content: 'text';
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: #A5B6EE;
+    font-size:12px ;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.countdown div#hrs::before{
+    content: 'hrs';
+}
+.countdown div#min::before{
+    content: 'min';
+}
+.countdown div#sec::before{
+    content: 'sec';
+}
+
+.countdown span{
+    color: #8198d0;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn-start,
+.btn-reset{
+    width: 112px;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #324577;
+    color: #617199;
+    margin-right: 12px;
+}
+
+footer{
+    margin-top: 60px;
+}
+footer p{
+    color: #8596BF;
+    font-size: 14px;
+}

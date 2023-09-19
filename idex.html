@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Set</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5bc4bee4ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-bg">
+        <header>
+            <img src="img/weniv-logo.svg" alt="weniv">
+        </header>
+        <main class="container">
+            <h2>TIMER</h2>
+            <div class="line"></div>
+            <div class="countdown">
+                <div id="hrs">00</div>
+                <span>:</span>
+                <div id="min">00</div>
+                <span>:</span>
+                <div id="sec">00</div>
+            </div>
+            <div class="btn">
+                <button class="btn-start"><i class="fa-sharp fa-solid fa-play"></i>START</button>
+                <button class="btn-reset"><i class="fa-solid fa-rotate-right fa-flip-horizontal"></i>RESET</button>
+            </div>
+        </main>
+        <footer>
+            <p>ⓒ WENIV Corp.</p>
+        </footer>
+
+        <script type="text/javascript">
+            const starBtn = document.querySelector('.btn-start')
+            const resetBtn = document.querySelector('.btn-reset')
+
+            let hrs = document.getElementById('hrs ')
+            let min = document.getElementById('min ')
+            let sec = document.getElementById('sec ')
+
+            setInterval(() => {
+
+                let currentTime = new Date()
+
+                hrs.innerHTML = currentTime.getHours()
+                min.innerHTML = currentTime.getMinutes()
+                sec.innerHTML = currentTime.getSeconds()
+            }, 1000)
+
+        </script>
+    </div>
+</body>
+
+</html>
